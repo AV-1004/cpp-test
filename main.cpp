@@ -1,7 +1,7 @@
 #include <iostream>
  int main(){
-std: :cout << "Hello, C++" << std::endl;
-return 0;
+    std::cout << "Hello, GitHub!" << std::endl;
+    return 0;
 }
 
 
