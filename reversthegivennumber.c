@@ -2,16 +2,16 @@
 
 int main()
 {
-    int number, digit, reverse = 0;
+    int num,digit,reverse = 0;
 
     printf("Enter a number: ");
-    scanf("%d", &number);
+    scanf("%d", &num);
 
-    while (number != 0)
+    while (num!= 0)
     {
-        digit = number % 10;
+        digit = num % 10;
         reverse = reverse * 10 + digit;
-        number = number / 10;
+        num = num / 10;
     }
 
     printf("Reverse = %d",reverse);
