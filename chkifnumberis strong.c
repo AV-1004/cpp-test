@@ -2,28 +2,28 @@
 
 int main()
 {
-    int number, original, digit;
+    int num, original, digit;
     int factorial, sum = 0;
 
     printf("Enter a number: ");
-    scanf("%d", &number);
+    scanf("%d", &num);
 
-    original = number;
+    original = num;
 
-    while (number != 0)
+    while (num!= 0)
     {
-        digit = number % 10;
+        digit=num% 10;
 
         factorial = 1;
 
         for (int i = 1; i <= digit; i++)
         {
-            factorial = factorial * i;
+            factorial = factorial*i;
         }
 
         sum = sum + factorial;
 
-        number = number / 10;
+        num= num / 10;
     }
 
     if (sum == original)
