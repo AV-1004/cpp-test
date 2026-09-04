@@ -2,37 +2,37 @@
 
 int main()
 {
-    int number, remainder, original, reverse = 0, armstrongNumber = 0;
+    int num, rem, og, reverse = 0, armstrongNumber = 0;
 
     printf("Enter any number: ");
-    scanf("%d", &number);
+    scanf("%d", &num);
 
-    original = number;
+    og= num;
 
-    while (number != 0)
+    while (num!= 0)
     {
-        remainder = number % 10;
-        reverse = reverse * 10 + remainder;
-        armstrongNumber = armstrongNumber + (remainder * remainder * remainder);
-        number = number / 10;
+        rem= num % 10;
+        reverse = reverse * 10 + rem;
+        armstrongNumber = armstrongNumber + (rem * rem * rem);
+        num = num/ 10;
     }
 
-    if (original == reverse)
+    if (og == reverse)
     {
-        printf("The number %d is a palindrome\n", original);
-    }
-    else
-    {
-        printf("The number %d is not a palindrome\n", original);
-    }
-
-    if (original == armstrongNumber)
-    {
-        printf("The number %d is an Armstrong number\n", original);
+        printf("The number %d is a palindrome\n", og);
     }
     else
     {
-        printf("The number %d is not an Armstrong number\n", original);
+        printf("The number %d is not a palindrome\n", og);
+    }
+
+    if (og == armstrongNumber)
+    {
+        printf("The number %d is an Armstrong number\n", og);
+    }
+    else
+    {
+        printf("The number %d is not an Armstrong number\n", og);
     }
 
     return 0;
