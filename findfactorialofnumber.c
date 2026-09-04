@@ -3,17 +3,17 @@
 int main()
 {
     int n, i;
-    int factorial = 1;
+    int fact = 1;
 
     printf("Enter a number: ");
     scanf("%d", &n);
 
     for (i = 1; i <= n; i++)
     {
-        factorial=factorial*i;
+        fact=fact*i;
     }
 
-    printf("Factorial = %d", factorial);
+    printf("Factorial = %d", fact);
 
     return 0;
 }
